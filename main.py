@@ -58,6 +58,6 @@ async def image_segmentation(file:UploadFile):
     print(origin_filename)
     model_name = Path("unet-6v.pt")
     predict(model_name, origin_filename, path_save_image)
-    return {"message": path}
+    return {"message": path_save_image}
 
  
